@@ -51,7 +51,7 @@ def pso_feature_selection(X, y):
     ub = np.ones(num_features)   # Upper bounds for feature selection (binary vector)
 
     # Perform PSO
-    best_features, _ = pso(objective_function_wrapper, lb, ub, swarmsize=10, maxiter=20)
+    best_features, _ = pso(objective_function_wrapper, lb, ub, swarmsize=100, maxiter=2000)
 
     best_indices = np.where(best_features)[0]
     return best_indices
