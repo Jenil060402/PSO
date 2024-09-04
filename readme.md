@@ -1,46 +1,46 @@
 # Particle Swarm Optimization - Nature's Intelligence(link to Kaggle notebooks at last)
-# The project got published in International Journal of Innovative Research in Technology[IJIRT](https://ijirt.org/Article?manuscript=166953)
+# The project got published in International Journal of Innovative Research in Technology ➡️[IJIRT](https://ijirt.org/Article?manuscript=166953)
 
-## Particle Swarm Optimization (PSO) is a population-based optimization algorithm inspired by the social behavior of birds flocking or fish schooling. It's used to solve complex optimization problems by iteratively improving candidate solutions with respect to a given objective function.
-
-
-
-### Key Concepts in PSO
+## Particle Swarm Optimization (PSO) is a population-based optimization algorithm inspired by the social behavior of birds flocking🦆 or fish schooling🐠. It's used to solve complex optimization problems by iteratively improving candidate solutions with respect to a given objective function.
 
 
-**Swarm (Population):**
+
+### ⭕Key Concepts in PSO
+
+
+**🔥Swarm (Population):**
 PSO involves a group of individuals, called particles, that collectively form a swarm.
 Each particle represents a potential solution to the optimization problem.
 The swarm is initialized with random positions and velocities in the search space.
 
-**Particles:**
+**🔥Particles:**
 Each particle has a position and velocity.
 The position corresponds to a candidate solution.
 The velocity is the direction and speed with which the particle moves through the search space.
 
-**Objective Function:**
+**🔥Objective Function:**
 Particles evaluate their fitness based on an objective function, which the algorithm seeks to minimize or maximize.
 The fitness of a particle is a measure of how good its current position is as a solution to the problem.
 
-**Personal and Global Bests:**
+**🔥Personal and Global Bests:**
 Each particle keeps track of its personal best position (denoted as p_best), the best solution it has found so far.
 The swarm also tracks the global best position (denoted as g_best), which is the best solution found by any particle in the swarm.
 
-**Velocity and Position Update Rules:**
+**🔥Velocity and Position Update Rules:**
 At each iteration, particles adjust their velocities and positions based on the following factors:
 Inertia
 Cognitive Component(move towards Personal Best)
 Social Component (move towards the Global Best)
 
-**Termination Criteria:**
+**🔥Termination Criteria:**
 The algorithm iterates until a stopping condition is met, such as a maximum number of iterations or convergence to an acceptable solution.
 
 
-## The DataSet
+## ⭕The DataSet
 
 ### The dataset is the Cleveland Heart Disease dataset taken from the UCI repository. The dataset consists of 303 individuals’ data. There are 14 columns in the dataset(which have been extracted from a larger set of 75). No missing values. The classification task is to predict whether an individual is suffering from heart disease or not. (0: absence, 1: presence)
 
-Original data: https://archive.ics.uci.edu/ml/datasets/Heart+Disease
+[Original data:](https://archive.ics.uci.edu/ml/datasets/Heart+Disease)
 
 Content
 This database contains 13 attributes and a target variable. It has 8 nominal values and 5 numeric values. The detailed description of all these features are as follows:
@@ -98,7 +98,7 @@ target:\
 It is the target variable which we have to predict.\
 1 means patient is suffering from heart disease and 0 means patient is normal.
 
-## Problem Statement
+## ⭕Problem Statement
 
 ### Many heart diseases occur due to a variety of reasons, and while in order to detect them, it may become necessary to identify which tests are generally to be done, as it may not be feasible for people to generate so many reports Eg: Our dataset contains 13 features, and patient cannot be expected to have the results of all 13 with them.
 
@@ -112,9 +112,9 @@ Each particle is represented with a **Binary Vector** of 13 values(0: not select
 
 **The algorithm then runs as per given swarm size and iterations and tries to find a combination of selected features which can best predict the onset of heart disease.**
 
-## Solution:
+## ⭕Solution:
 
-### Process:
+### 🔥Process:
 I have used 4 different classification algorithms:
 
 Logistic Regression\
@@ -125,16 +125,16 @@ Gradient Boosting
 These act as an objective target for the particles to reach.\
 Additionally, a penalty can be added to each step for the particle as per the achieved accuracy scores.
 
-### Working:
+### 🔥Working:
 
 The function returns a subset of the features selected, which are best suited according to the classification algorithm for prediction of heart disease(1 in target variable).
 
 Then, we use all 4 classification algorithms and performance metrics in order to check the accuracy scores.
 
 
-### The 4 notebooks show the outputs of the classification algorithms.
+### 🔥The 4 notebooks show the outputs of the classification algorithms.
 
-[Logistic Regression](https://www.kaggle.com/code/jenilkumbhani/pso-lr)\
+**[Logistic Regression](https://www.kaggle.com/code/jenilkumbhani/pso-lr)\
 [SVC](https://www.kaggle.com/code/jenilkumbhani/pso-svc)\
 [Random Forest](https://www.kaggle.com/code/jenilkumbhani/pso-rf)\
-[Gradient Boosting](https://www.kaggle.com/code/jenilkumbhani/pso-gb)
+[Gradient Boosting](https://www.kaggle.com/code/jenilkumbhani/pso-gb)**
