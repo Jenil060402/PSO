@@ -1,4 +1,5 @@
 # Particle Swarm Optimization - Nature's Intelligence(link to Kaggle notebooks at last)
+# The project got published in International Journal of Innovative Research in Technology[IJIRT](https://ijirt.org/Article?manuscript=166953)
 
 ## Particle Swarm Optimization (PSO) is a population-based optimization algorithm inspired by the social behavior of birds flocking or fish schooling. It's used to solve complex optimization problems by iteratively improving candidate solutions with respect to a given objective function.
 
